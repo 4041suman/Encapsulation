@@ -1,0 +1,41 @@
+
+class Account{
+    private int acc_no;
+    private String name,email;
+    private float amount;
+
+public int getAcc_no(){
+    return acc_no;
+}
+public void setAcc_no(int acc_no){
+    this.acc_no=acc_no;
+}
+public String getEmail(){
+    return email;
+}
+public void setEmail(String email){
+    this.email=email;
+}
+public String getName(){
+    return name;
+}
+public void setName(String name){
+    this.name=name;
+}
+public float getAmount(){
+    return amount;
+}
+public void setAmount(float amount){
+    this.amount=amount;
+}
+}  
+public class Bank{
+    public static void main(String[] args){
+        Account obj = new Account();
+        obj.setAcc_no(192837465);
+        obj.setEmail("4041suman@gmail.com");
+        obj.setName("Aaron");
+        obj.setAmount(50000f);
+        System.out.println(obj.getAcc_no()+" "+obj.getName()+" "+obj.getEmail()+" "+obj.getAmount());
+    }
+}
